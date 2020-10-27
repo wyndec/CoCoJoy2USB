@@ -178,7 +178,7 @@ void joyStickState() {
 
 
 /* joyStickSwitchState(): This routine is for detecting state of Left-Right momentary switch.
- *  The momentary switch allows toggling between left and right joystick outputs. An led is also
+ *  The momentary switch allows toggling between left and right joystick outputs. An LED is also
  *  toggled to indicate which output is currently enabled.
  */
 void joyStickSwitchState() {
@@ -225,7 +225,7 @@ void clearJoyButtons() {
 }
 
 
-/* joyButtonStates(): This routine is for handling current state joystick buttons.
+/* joyButtonStates(): This routine is for handling current state of joystick buttons.
  *  This will set X-axis and Y-axis values based on analog reads of respective inputs.
  *  A separate call within the routine will also check the status of the joystick buttons.
  */
