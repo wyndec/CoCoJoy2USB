@@ -2,7 +2,7 @@
     CoCo Joystick2USB v2.1
     by: Paul Fiscarelli
     
-    Copyright (c) 2020, Paul Fiscarelli
+    Copyright (c) 2020-2023, Paul Fiscarelli
     
     Adapted from Matthew Heironimus's ArduinoJoystickLibrary
     https://github.com/MHeironimus/ArduinoJoystickLibrary 
@@ -81,8 +81,8 @@ int FF1 = A2;
 
 // joy button two inputs
 int BP2 = 3;
-int BR2 = NULL;
-int FF2 = NULL;
+int BR2 = 0;
+int FF2 = 0;
 
 // left-right switch input and LED
 int joySwitchLED = 5;
@@ -112,9 +112,9 @@ Joystick_ Joystick[JOYSTICK_COUNT] = {
 // define our Button class
 class Button {
   public:
-  int pin = NULL;                     // button input
-  int rswitch = NULL;                 // rapid-fire switch input
-  int ranalog = NULL;                 // rapid-fire analog read
+  int pin = 0;                        // button input
+  int rswitch = 0;                    // rapid-fire switch input
+  int ranalog = 0;                    // rapid-fire analog read
   int lastState = 0;                  // last state of button push
   int rFireState = 0;                 // last rapid-fire state
   unsigned long rFireCount = 0;       // rapid-fire countdown timer
